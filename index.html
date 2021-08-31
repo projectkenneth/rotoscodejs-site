@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>RotoscodeJS - Record as you type your code and share that exact moment to the
+        world!</title>
+
+    <link rel="shortcut icon" type="image/png" href="icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https:///cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1><a href="index.html"><img class="icon" src="icon.png" alt="Quick Demo" /> RotoscodeJS</a></h1>
+        <p>Record as you type your code and share that exact moment to the
+            world. Here it is in action:
+        </p>
+        <pre><code id="codeplayer"></code></pre>
+        <script src="https://cdn.jsdelivr.net/gh/projectkenneth/rotoscodejs-player@1.0.1/dist/rotoscodejs-player.min.js"
+            type="text/javascript"></script>
+        <script type="text/javascript">
+            var recordingData = { "endTimestampMS": 3748, "initialText": "function iAmAlive() {\r\n    return \"\";\r\n}", "changeLog": [{ "timestamp": 578, "text": "function iAmAlive() {\r\n    return \"I\";\r\n}" }, { "timestamp": 811, "text": "function iAmAlive() {\r\n    return \"I \";\r\n}" }, { "timestamp": 893, "text": "function iAmAlive() {\r\n    return \"I a\";\r\n}" }, { "timestamp": 1029, "text": "function iAmAlive() {\r\n    return \"I am\";\r\n}" }, { "timestamp": 1192, "text": "function iAmAlive() {\r\n    return \"I am \";\r\n}" }, { "timestamp": 1432, "text": "function iAmAlive() {\r\n    return \"I am R\";\r\n}" }, { "timestamp": 1651, "text": "function iAmAlive() {\r\n    return \"I am Ro\";\r\n}" }, { "timestamp": 1736, "text": "function iAmAlive() {\r\n    return \"I am Rot\";\r\n}" }, { "timestamp": 1841, "text": "function iAmAlive() {\r\n    return \"I am Roto\";\r\n}" }, { "timestamp": 1941, "text": "function iAmAlive() {\r\n    return \"I am Rotos\";\r\n}" }, { "timestamp": 2136, "text": "function iAmAlive() {\r\n    return \"I am Rotosc\";\r\n}" }, { "timestamp": 2311, "text": "function iAmAlive() {\r\n    return \"I am Rotosco\";\r\n}" }, { "timestamp": 2408, "text": "function iAmAlive() {\r\n    return \"I am Rotoscod\";\r\n}" }, { "timestamp": 2621, "text": "function iAmAlive() {\r\n    return \"I am Rotoscode\";\r\n}" }, { "timestamp": 3076, "text": "function iAmAlive() {\r\n    return \"I am RotoscodeJ\";\r\n}" }, { "timestamp": 3345, "text": "function iAmAlive() {\r\n    return \"I am RotoscodeJS\";\r\n}" }, { "timestamp": 3748, "text": "function iAmAlive() {\r\n    return \"I am RotoscodeJS!\";\r\n}" }] };
+            var rotoscodejsObj = rotoscodejs({
+                element: document.getElementById('codeplayer'),
+                recordingData: recordingData,
+                onRender: (el) => {
+                    hljs.highlightElement(el, { language: 'js' });
+                }
+            });
+
+            rotoscodejsObj.play(true);
+        </script>
+
+        <h2>Installation</h2>
+        Add the <a
+            href="https://marketplace.visualstudio.com/items?itemName=projectkenneth.rotoscodejs-vscodeext">recorder
+            extension</a>
+        to <a href="https://code.visualstudio.com/">VSCode</a>.
+
+        <h2>Usage</h2>
+        <h3>Quick Demo</h3>
+        <img class="demo-img" src="quick-demo.gif" alt="Quick Demo" />
+
+        <h3>Step-by-step</h3>
+        <ol>
+            <li>Open the command palette (Ctrl+Shift+P on Windows and Linux, Cmd+Shift+P on OS X) and search for
+                RotoscodeJS.</li>
+            <li>Click on the Start Recording button then wait for the countdown timer to wind down.</li>
+            <li>Update your code however you like (RotoscodeJS will capture every change).</li>
+            <li>Click on the Stop Recording button to end the recording session.</li>
+            <li>A preview of the recording will be displayed which can be played again from the beginning.</li>
+            <li>Click on the Copy Code to copy the embed code to the clipboard.</li>
+            <li>Paste the embed code to your webpage.</li>
+        </ol>
+
+        <h2>It's Open Source!</h2>
+        <ul>
+            <li><a href="https://github.com/projectkenneth/rotoscodejs-recorder">Extension Code</a>.</li>
+            <li><a href="https://github.com/projectkenneth/rotoscodejs-player">Embeddable Player Code</a>.</li>
+        </ul>
+        <div class="credits">
+            Proudly created by <a href="https://bio.link/projectkenneth">Kenneth Angelo Reyes</a>.
+        </div>
+    </div>
+</body>
+
+</html>
