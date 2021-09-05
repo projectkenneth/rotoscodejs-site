@@ -28,13 +28,15 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https:///cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/projectkenneth/rotoscodejs-player@1.0.1/dist/rotoscodejs-player.min.js"
-        type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/gh/projectkenneth/rotoscodejs-player@1.0.1/dist/rotoscodejs-player.min.js" type="text/javascript"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9083RFLEH4"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-9083RFLEH4');
@@ -43,16 +45,15 @@
 
 <body>
     <div class="wrapper">
-        <h1><a href="index.html"><img class="icon" src="icon.png" alt="Quick Demo" /> RotoscodeJS</a></h1>
-        <p>Record as you type your code and share that exact moment to the
-            world. Here it is in action:
+        <h1>
+            <a href="index.html"><img class="icon" src="icon.png" alt="Quick Demo" /> RotoscodeJS</a>
+        </h1>
+        <p>Record as you type your code and share that exact moment to the world. Here it is in action:
         </p>
         <pre><code id="codeplayer"></code></pre>
         <h2>Installation</h2>
-        Add the <a
-            href="https://marketplace.visualstudio.com/items?itemName=projectkenneth.rotoscodejs-vscodeext">recorder
-            extension</a>
-        to <a href="https://code.visualstudio.com/">VSCode</a>.
+        Add the <a href="https://marketplace.visualstudio.com/items?itemName=projectkenneth.rotoscodejs-vscodeext">recorder
+            extension</a> to <a href="https://code.visualstudio.com/">VSCode</a>.
 
         <h2>Usage</h2>
         <h3>Step 1: Record</h2>
@@ -62,8 +63,8 @@
 
         <h4>Step-by-step</h3>
             <ol>
-                <li>Open the command palette (Ctrl+Shift+P on Windows and Linux, Cmd+Shift+P on OS X) and search for
-                    RotoscodeJS.</li>
+                <li>Open the command palette (Ctrl+Shift+P on Windows and Linux, Cmd+Shift+P on OS X) and search for RotoscodeJS.
+                </li>
                 <li>Click on the Start Recording button then wait for the countdown timer to wind down.</li>
                 <li>Update your code however you like (RotoscodeJS will capture every change).</li>
                 <li>Click on the Stop Recording button to end the recording session.</li>
@@ -72,8 +73,7 @@
             </ol>
 
             <h3>Step 2: Embed</h2>
-                <p>The widget code below will be provided by the recorder extension. Just simply paste it to your
-                    webpage and it'll be good to go!</p>
+                <p>The widget code below will be provided by the recorder extension. Just simply paste it to your webpage and it'll be good to go!</p>
                 <pre><code id="embedSample">&lt;pre&gt;&lt;code id="codeplayer"&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;script src="PATH_TO_ROTOSCODEJS_WIDGET_SCRIPT" type="text/javascript"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
@@ -93,8 +93,7 @@
 &lt;/script&gt;</code></pre>
                 <p>The latest stable version of the widget script can be downloaded from jsDelivr:</p>
                 <pre><code>https://cdn.jsdelivr.net/gh/projectkenneth/rotoscodejs-player@1.0.1/dist/rotoscodejs-player.min.js</code></pre>
-                <p>For more details on how to use the <code>rotoscodejs</code> player widget, click <a
-                        href="https://github.com/projectkenneth/rotoscodejs-player#basic-usage">here</a>.</p>
+                <p>For more details on how to use the <code>rotoscodejs</code> player widget, click <a href="https://github.com/projectkenneth/rotoscodejs-player#basic-usage">here</a>.</p>
 
                 <h2>It's Open Source!</h2>
                 <ul>
@@ -102,23 +101,82 @@
                     <li><a href="https://github.com/projectkenneth/rotoscodejs-player">Embeddable Player Code</a>.</li>
                 </ul>
                 <div class="credits">
-                    Proudly created by <a href="https://bio.link/projectkenneth">Kenneth Angelo Reyes</a>.
+                    Proudly created by <a href="https://projectkenneth.com">Kenneth Angelo Reyes</a>.
                 </div>
     </div>
     <script type="text/javascript">
-        (function () {
-            var recordingData = { "endTimestampMS": 3748, "initialText": "function iAmAlive() {\r\n    return \"\";\r\n}", "changeLog": [{ "timestamp": 578, "text": "function iAmAlive() {\r\n    return \"I\";\r\n}" }, { "timestamp": 811, "text": "function iAmAlive() {\r\n    return \"I \";\r\n}" }, { "timestamp": 893, "text": "function iAmAlive() {\r\n    return \"I a\";\r\n}" }, { "timestamp": 1029, "text": "function iAmAlive() {\r\n    return \"I am\";\r\n}" }, { "timestamp": 1192, "text": "function iAmAlive() {\r\n    return \"I am \";\r\n}" }, { "timestamp": 1432, "text": "function iAmAlive() {\r\n    return \"I am R\";\r\n}" }, { "timestamp": 1651, "text": "function iAmAlive() {\r\n    return \"I am Ro\";\r\n}" }, { "timestamp": 1736, "text": "function iAmAlive() {\r\n    return \"I am Rot\";\r\n}" }, { "timestamp": 1841, "text": "function iAmAlive() {\r\n    return \"I am Roto\";\r\n}" }, { "timestamp": 1941, "text": "function iAmAlive() {\r\n    return \"I am Rotos\";\r\n}" }, { "timestamp": 2136, "text": "function iAmAlive() {\r\n    return \"I am Rotosc\";\r\n}" }, { "timestamp": 2311, "text": "function iAmAlive() {\r\n    return \"I am Rotosco\";\r\n}" }, { "timestamp": 2408, "text": "function iAmAlive() {\r\n    return \"I am Rotoscod\";\r\n}" }, { "timestamp": 2621, "text": "function iAmAlive() {\r\n    return \"I am Rotoscode\";\r\n}" }, { "timestamp": 3076, "text": "function iAmAlive() {\r\n    return \"I am RotoscodeJ\";\r\n}" }, { "timestamp": 3345, "text": "function iAmAlive() {\r\n    return \"I am RotoscodeJS\";\r\n}" }, { "timestamp": 3748, "text": "function iAmAlive() {\r\n    return \"I am RotoscodeJS!\";\r\n}" }] };
+        (function() {
+            var recordingData = {
+                "endTimestampMS": 3748,
+                "initialText": "function iAmAlive() {\r\n    return \"\";\r\n}",
+                "changeLog": [{
+                    "timestamp": 578,
+                    "text": "function iAmAlive() {\r\n    return \"I\";\r\n}"
+                }, {
+                    "timestamp": 811,
+                    "text": "function iAmAlive() {\r\n    return \"I \";\r\n}"
+                }, {
+                    "timestamp": 893,
+                    "text": "function iAmAlive() {\r\n    return \"I a\";\r\n}"
+                }, {
+                    "timestamp": 1029,
+                    "text": "function iAmAlive() {\r\n    return \"I am\";\r\n}"
+                }, {
+                    "timestamp": 1192,
+                    "text": "function iAmAlive() {\r\n    return \"I am \";\r\n}"
+                }, {
+                    "timestamp": 1432,
+                    "text": "function iAmAlive() {\r\n    return \"I am R\";\r\n}"
+                }, {
+                    "timestamp": 1651,
+                    "text": "function iAmAlive() {\r\n    return \"I am Ro\";\r\n}"
+                }, {
+                    "timestamp": 1736,
+                    "text": "function iAmAlive() {\r\n    return \"I am Rot\";\r\n}"
+                }, {
+                    "timestamp": 1841,
+                    "text": "function iAmAlive() {\r\n    return \"I am Roto\";\r\n}"
+                }, {
+                    "timestamp": 1941,
+                    "text": "function iAmAlive() {\r\n    return \"I am Rotos\";\r\n}"
+                }, {
+                    "timestamp": 2136,
+                    "text": "function iAmAlive() {\r\n    return \"I am Rotosc\";\r\n}"
+                }, {
+                    "timestamp": 2311,
+                    "text": "function iAmAlive() {\r\n    return \"I am Rotosco\";\r\n}"
+                }, {
+                    "timestamp": 2408,
+                    "text": "function iAmAlive() {\r\n    return \"I am Rotoscod\";\r\n}"
+                }, {
+                    "timestamp": 2621,
+                    "text": "function iAmAlive() {\r\n    return \"I am Rotoscode\";\r\n}"
+                }, {
+                    "timestamp": 3076,
+                    "text": "function iAmAlive() {\r\n    return \"I am RotoscodeJ\";\r\n}"
+                }, {
+                    "timestamp": 3345,
+                    "text": "function iAmAlive() {\r\n    return \"I am RotoscodeJS\";\r\n}"
+                }, {
+                    "timestamp": 3748,
+                    "text": "function iAmAlive() {\r\n    return \"I am RotoscodeJS!\";\r\n}"
+                }]
+            };
             var rotoscodejsObj = rotoscodejs({
                 element: document.getElementById('codeplayer'),
                 recordingData: recordingData,
                 onRender: (el) => {
-                    hljs.highlightElement(el, { language: 'js' });
+                    hljs.highlightElement(el, {
+                        language: 'js'
+                    });
                 }
             });
 
             rotoscodejsObj.play(true);
 
-            hljs.highlightElement(document.getElementById('embedSample'), { language: 'html' });
+            hljs.highlightElement(document.getElementById('embedSample'), {
+                language: 'html'
+            });
         })();
     </script>
 </body>
