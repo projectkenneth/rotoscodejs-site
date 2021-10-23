@@ -776,11 +776,8 @@ input[type='checkbox'] {
 	margin-bottom: 1.75rem;
 }
 
-.basic-4 pre {
-	display: block;
-	margin-right: 3rem;
-	margin-left: 3rem;
-	text-align: left;
+.basic-4 pre code.hljs {
+	padding: 2.5em;
 }
 
 
